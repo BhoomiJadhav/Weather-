@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.weatherContainer {
+    margin: 50rem;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 19px 0px #5fd0ece9;
+    background-color: #76b2c1c4;
+}
+
+#weatherForm input {
+    border: none;
+    color: black;
+    outline: none;
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+#weatherForm ul li {
+    list-style: none;
+}
+
+.searchBtn {
+    background: transparent;
+    border: none;
+}
+
+.searchBtn ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+#weatherForm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.appHeading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+}
+
+#city {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+}
+
+.weatherContainer img {
+    width: 50%;
+}
+
+#temp {
+    word-spacing: -8px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#temp sup {
+    font-size: 2rem;
+}
+
+.weatherMain {
+    font-family: sans-serif;
+}
+
+#todayTime,
+.todayDates {
+    font-family: sans-serif;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+
+/* Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+/* Media Query for Responsive */
+@media screen and (max-width: 307px) {
+    #weatherForm {
+        flex-direction: column;
+    }
+
+    #weatherForm input {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
